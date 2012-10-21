@@ -1,5 +1,6 @@
 {
 	"name": "TFTP-Client",
+	"version": "0.1.0",
 	"description": "Very simple TFTP client",
 	"main": "lib/tftp.js",
 	"bin": "bin/tftp.js"
