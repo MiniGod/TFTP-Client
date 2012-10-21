@@ -1,7 +1,8 @@
-var TFTP = require('..');
+var TFTP = require('..'),
+	fs = require('fs');
 
 
-// Initialize the ftp client
+// Initialize the tftp client
 var client = new TFTP(69, '78.47.194.67');
 
 client.read('1.txt', function (err, data) {
@@ -11,6 +12,8 @@ client.read('1.txt', function (err, data) {
 		return;
 	}
 
-	console.log('Got data:');
-	console.log(data.toString());
+	console.log('Got data (%d bytes). First 100 bytes:', data.length);
+	console.log(data.toString('utf8', 0, 100));
+
+	fs.writeFileSync('1.txt', data);
 });
