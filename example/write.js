@@ -2,7 +2,7 @@ var TFTP = require('..'),
 	fs = require('fs');
 
 // Initialize the tftp client
-var client = new TFTP(69, '78.47.194.67');
+var client = new TFTP(69, 'localhost');
 
 // Read file, and get a buffer back
 var data = fs.readFileSync('1.txt');

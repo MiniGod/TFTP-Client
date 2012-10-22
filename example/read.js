@@ -1,9 +1,8 @@
 var TFTP = require('..'),
 	fs = require('fs');
 
-
 // Initialize the tftp client
-var client = new TFTP(69, '78.47.194.67');
+var client = new TFTP(69, 'localhost');
 
 client.read('1.txt', function (err, data) {
 	if (err) {
