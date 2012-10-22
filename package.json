@@ -1,9 +1,10 @@
 {
-	"name": "TFTP-Client",
+	"name": "tftp-client",
 	"version": "0.2.0",
 	"description": "Very simple TFTP client",
-	"main": "lib/tftp.js",
-	"bin": {
-		"tftp-client": "bin/tftp.js"
-	}
+	"keywords": ["tftp"],
+	"author": "MiniGod",
+	"repository": "http://github.com/MiniGod/TFTP-Client",
+	"main": "./lib/tftp.js",
+	"bin": "./bin/tftp.js"
 }
