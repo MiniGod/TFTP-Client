@@ -3,5 +3,7 @@
 	"version": "0.1.1",
 	"description": "Very simple TFTP client",
 	"main": "lib/tftp.js",
-	"bin": "bin/tftp.js"
+	"bin": {
+		"tftp-client": "bin/tftp.js"
+	}
 }
