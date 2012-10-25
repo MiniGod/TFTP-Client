@@ -62,3 +62,4 @@ To install the tftp-client as CLI, run `npm install -g tftp-client`.
 - Timeout & retransmition.
 - Error packets - [RFC](http://tools.ietf.org/html/rfc1350#page-8).
 - Do the initial connection as defined in section 4 (TID's: port numbers from request ack) - [RFC](http://tools.ietf.org/html/rfc1350#section-4).
+- Currently, any DATA or ACK packet is responded to. Eg. An ACK packet will get a `DATA` response. There is not check for the block numbers to be in order.
