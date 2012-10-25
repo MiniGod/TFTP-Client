@@ -3,6 +3,7 @@ var TFTP = require('..'),
 
 // Initialize the tftp client
 var client = new TFTP(69, 'localhost');
+client.debug = true;
 
 client.read('1.txt', function (err, data) {
 	if (err) {

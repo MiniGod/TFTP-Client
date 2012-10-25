@@ -3,6 +3,7 @@ var TFTP = require('..'),
 
 // Initialize the tftp client
 var client = new TFTP(69, 'localhost');
+client.debug = true;
 
 // Read file, and get a buffer back
 var data = fs.readFileSync('1.txt');
