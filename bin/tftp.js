@@ -12,8 +12,8 @@ var TFTP = require('..'), // The tftp-client module
 // Too few arguments (node + path_to_this_file + host + cmd + file = 5)
 if (process.argv.length < 5) {
 	// Print usage, and exit
-	console.log('Needs atleast 4 arguments (you had %d)', process.argv.length);
-	console.log(process.argv);
+	console.log('Needs atleast 3 arguments (you had %d)', process.argv.length-2);
+	console.log('');
 	printUsage(true);
 }
 
@@ -56,7 +56,7 @@ if (cmd == 'read') {
 				
 				// If error, output some error message
 				if (err) {
-					console.error('Dang it! Error while wring file!');
+					console.error('Dang it! Error while writing file!');
 					console.error(err);
 				} else {
 
